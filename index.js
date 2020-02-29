@@ -23,6 +23,7 @@ var mysql = require('mysql')
   app.set('views', path.join(__dirname, 'views'))
   app.set('view engine', 'ejs')
   app.get('/', (req, res) => res.render('pages/index'))
+  app.get('/user_registration', (req, res) => res.render('pages/form'))
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
   ////////////////////////////////////
 
