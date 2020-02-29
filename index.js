@@ -7,13 +7,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 var mysql = require('mysql')
 
 
-  var connection = mysql.createConnection({
-    port: '3306',
-    host: 'bluebrain.ck13expvgtvq.us-west-1.rds.amazonaws.com',
-    user: 'bluebrain',
-    password: 'bluebrain123456',
-    database: 'bluebrain' 
-  });
+
   connection.connect(function(err){
     if(err) throw err;
     console.log('Connected..');
