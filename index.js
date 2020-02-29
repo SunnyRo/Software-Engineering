@@ -8,11 +8,11 @@ var mysql = require('mysql')
 
 
   var connection = mysql.createConnection({
-    port: '3306',
-    host: 'bluebrain.ck13expvgtvq.us-west-1.rds.amazonaws.com',
-    user: 'bluebrain',
-    password: 'bluebrain123456',
-    database: 'bluebrain' 
+    port: '',
+    host: '',
+    user: '',
+    password: '',
+    database: '' 
   });
   connection.connect(function(err){
     if(err) throw err;
